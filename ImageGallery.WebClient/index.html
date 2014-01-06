@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Styles/index.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.0.2.js"></script>
+    <script src="Scripts/http-requester.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+    <script src="Scripts/class.js"></script>
+    <script src="Scripts/ui.js"></script>
+    <script src="Scripts/persister.js"></script>
+    <script src="Scripts/controller.js"></script>
+
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+      <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #sortable li span { position: absolute; margin-left: -1.3em; }
+
+   #sortable-gallery { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+  #sortable-gallery li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; font-size:10px }
+ 
+   #sortable-image{ list-style-type: none; margin: 0; padding: 0; width: 450px; }
+  #sortable-image li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; font-size:10px }
+
+  </style>
+</head>
+<body>
+    <div 
+        pub-key="pub-c-4bf036f3-f697-47f0-b9c7-b034d49f45d3" 
+        sub-key="sub-c-8a8561a8-05ab-11e3-991c-02ee2ddab7fe" 
+        ssl="off" origin="pubsub.pubnub.com" id="pubnub">
+    </div>
+    <script src="http://cdn.pubnub.com/pubnub-3.1.min.js"></script>
+    <div id="message-container"></div>
+    <div id="wrapper">
+        <header>
+            <h1>Image Gallery</h1>
+        </header>
+        <div id="content">
+        </div>
+    </div>
+    <div id="upload-image">
+
+     <form method="post" enctype="multipart/form-data"  action="http://maikati.apphb.com/api/images/postimage?title=photoo&userId=1&albumId=1">  
+            <input type="file" name="images" id="images" multiple />  
+            <button type="submit" id="btn">Upload Image</button>  
+	</form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿      #wrapper {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid black;
+            margin-top: 50px;
+            font: normal 14px Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+        }
+
+            #wrapper > header {
+            }
+
+        #user-nickname {
+            font-weight: bold;
+            font-size:1.1em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 5px 15px;
+            border: 1px solid #444;
+            border-radius: 3px;
+            text-decoration: none;
+            color: black;
+            background-color: #ccc;
+        }
+
+#big-image {
+    width:90%;
+}
+
+#message-container {
+    width:100%;
+    height:70px;
+    border:1px solid #ccc;
+    overflow:auto;
+}
+
+#message-container p{
+    margin:5px;
+}
+
+#users-container, #galleries-container, #content, #images-container, #albums-container {
+    zoom:1;
+}
+#users-container:after, #galleries-container:after, #content:after, #images-container:after, #albums-container:after {    
+    display:block;
+    content:"";
+    clear:both;
+}
+
+#users-container {
+    border:3px solid #bbb;
+    border-radius:5px;
+    width:30%;
+    float:left;
+    height:700px;
+    overflow:auto;
+}
+
+#users-container ul{
+    width:100%;
+}
+#users-container ul li{
+    padding:10px 0;
+}
+#users-container ul a{
+    display:block;
+    width:100%;
+}
+#galleries-container {
+    border:3px solid #bbb;
+    border-radius:5px;
+    width:68%;
+    float:right;
+}
